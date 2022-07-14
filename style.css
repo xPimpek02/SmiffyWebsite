@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@600&family=M+PLUS+1+Code&family=Roboto+Mono:ital,wght@0,100;0,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+
+body {
+    background-image: url("images/background.jpg");
+    background-size: 120%;
+    background-repeat: no-repeat;
+
+}
+
+.title-text {
+    text-shadow: 4px 4px 5px #000;
+    font-size: 80px;
+    font-family: 'Edu SA Beginner', cursive;
+    color: white;
+    text-align: center;
+    position: relative;
+    margin-top: 8%;
+}
+
+.buttons-demo {
+    position: relative;
+    text-align: center;
+    visibility: hidden;
+}
+
+.button-panel {
+    color: #3b97c4;
+}
+.button-invite {
+    color: #3b54c4;
+}
+.button-invite, .button-panel {
+    text-shadow: 4px 4px 5px #fff;
+    background: none;
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 32px;
+    height: 3.5rem;
+    text-shadow: #000 3px 3px 5px;
+    transition: all .5s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-top: 1.5%;
+}
+
+.button-invite:hover, .button-panel:hover {
+    text-shadow: rgba(93, 165, 207, 0.6) 10px 10px 50px;
+    transition-duration: .2s;
+  }
+
+@media (min-width: 768px) {
+.button-invite, .button-panel {
+    padding: 0 2.5rem;
+}
+}
+
+#span-text {
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-shadow: 2px 2px 4px #000;
+    font-size: 56px;
+    margin-top: -4.5%;
+    visibility: hidden;
+    animation: 10s anim-lineUp ease-out;
+}
+
+@keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
